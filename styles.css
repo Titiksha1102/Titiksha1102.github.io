@@ -15,7 +15,10 @@ body{
     padding-inline: 2rem;
     display: flex;
     justify-content: space-between;
-    
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #7f00ff;
 }
 
 .navlink a{
