@@ -206,3 +206,61 @@ body{
 
 }
 
+.contactme{
+    border-right: black solid 2px;
+}
+
+.sec1{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+
+
+#linkedin:hover::after{
+    display: block;
+    content: 'LinkedIn'; 
+    color: rgb(55, 54, 54);
+    font-size: 0.8rem;
+}
+#github:hover::after{
+    display: block;
+    content: 'GitHub'; 
+    color: rgb(55, 54, 54);
+    font-size: 0.8rem;
+}
+#leetcode:hover::after{
+    display: block;
+    content: 'Leetcode'; 
+    color: rgb(55, 54, 54);
+    font-size: 0.8rem;
+}
+#hackerrank:hover::after{
+    display: block;
+    content: 'HackerRank'; 
+    color: rgb(55, 54, 54);
+    font-size: 0.8rem;
+}
+
+.sec2{
+    
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.contactyouform{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
