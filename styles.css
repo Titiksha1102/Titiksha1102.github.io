@@ -2,7 +2,7 @@
 Tablet  -> 768px
 Laptop  -> 992px
 Desktop -> 1200px */
-@media screen and (max-width:1200px) { 
+  /* @media screen and (max-width:1200px) { 
       
   }
   @media screen and (max-width:992px) {
@@ -10,7 +10,7 @@ Desktop -> 1200px */
   }
   @media screen and (max-width:768px) {
     
-  }
+  } */
   @media screen and (max-width:576px) {
     .aboutme{
         display: block;
@@ -46,6 +46,7 @@ Desktop -> 1200px */
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #fff;
     /* background:linear-gradient(45deg, blueviolet, lightgreen); */
@@ -61,7 +62,9 @@ body{
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: #7f00ff;
+    /* background-color: rgb(127, 0, 255); */
+    background-color: #9400ff;
+
 }
 
 .navlink a{
@@ -97,11 +100,11 @@ body{
 }
 
 
-.aboutme{
+#aboutme{
     
-    display: flex;
-    justify-content: space-between;
+    
     background-image: url('images/whitebg.png');
+    
     min-height: 500px;
 
   /* Create the parallax scrolling effect */
@@ -112,27 +115,35 @@ body{
     
 }
 .abtpara{
+    padding-block: 15%;
+    
     padding-left: 10%;
     padding-right: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     font-weight: 900;   
 }
 
 .education{
     padding-block: 10%;
-    padding-inline: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
+    padding-right: 10%;
+    padding-left: 45%;
     
+    font-weight: 900;
+    min-height: 500px;
+
+    background-image: url('images/whiteedu.jpg');
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .skills{
-    padding-block: 10%;
+    /* min-height: 100vh; */
+    padding-top: 5%;
     padding-inline: 3%;
+    padding-bottom: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,12 +163,15 @@ body{
     width: 20%;
     height: 400px;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
-    background: linear-gradient(45deg, #00a1ff, #00ff8f);
+    background:linear-gradient(45deg, #7f00ff, #e100ff);
+    /* background: linear-gradient(45deg, #ff00d4, #00ddff); */
+    /* background:linear-gradient(45deg, #00a1ff, #00ff8f); */
+    color: black;
     
     
 }
 .skillcard:hover{
-    background:linear-gradient(45deg, #00a1ff, #00ff8f);
+    
     /* transform: translate(-5px,-5px); */
     /* border-radius: 10px; */
     box-shadow: 0 10px 15px rgba(0,0,0,.3);
@@ -167,7 +181,8 @@ body{
 }
 
 .projects{
-    padding-block: 10%;
+    padding-top: 5%;
+    padding-bottom: 10%;
     padding-inline: 15%;
     display: flex;
     align-items: center;
@@ -178,7 +193,9 @@ body{
 }
 .projectcard{
 
-    background:linear-gradient(45deg, #00a1ff, #00ff8f);
+    /* background:linear-gradient(45deg, #00a1ff, #00ff8f); */
+    background:linear-gradient(45deg, #7f00ff, #e100ff);
+
 
     display: flex;
     align-items:flex-start;
@@ -187,11 +204,12 @@ body{
     border-radius: 10px;
     width: 30%;
     height: 400px;
+    color: black;
 
 }
 
 .projectcard:hover{
-    background:linear-gradient(45deg, #00a1ff, #00ff8f);
+    
     /* transform: translate(-5px,-5px); */
     /* border-radius: 10px; */
 
@@ -206,7 +224,7 @@ body{
 
 }
 
-.contactme{
+#contactme{
     border-right: black solid 2px;
 }
 
@@ -224,25 +242,25 @@ body{
 #linkedin:hover::after{
     display: block;
     content: 'LinkedIn'; 
-    color: rgb(55, 54, 54);
+    /* color: rgb(55, 54, 54); */
     font-size: 0.8rem;
 }
 #github:hover::after{
     display: block;
     content: 'GitHub'; 
-    color: rgb(55, 54, 54);
+    /* color: rgb(55, 54, 54); */
     font-size: 0.8rem;
 }
 #leetcode:hover::after{
     display: block;
     content: 'Leetcode'; 
-    color: rgb(55, 54, 54);
+    /* color: rgb(55, 54, 54); */
     font-size: 0.8rem;
 }
 #hackerrank:hover::after{
     display: block;
     content: 'HackerRank'; 
-    color: rgb(55, 54, 54);
+    /* color: rgb(55, 54, 54); */
     font-size: 0.8rem;
 }
 
@@ -262,5 +280,58 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    row-gap: 1rem;
     
+}
+input{
+    
+    width: 50ch;
+    border-radius: 10px;
+    background-color: #eee;
+    border: #eee solid 1px;
+    padding: 0.5rem;
+}
+
+#submit{
+   
+    width: 10ch;
+    background-color: #7f00ff;
+    border-style: none;
+    color: white;
+    font-weight: bolder;
+    
+}
+
+#comments{
+    
+    padding-bottom: 15ch;
+}
+
+
+
+.footer2{
+    margin-top: 1rem;
+    background-color: rgb(127, 0, 255);
+    padding: 2rem;
+    color: white;
+}
+
+
+#btn{
+    padding-inline: 1ch;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #7f00ff;
+    border-radius: 20px;
+    width: 5ch;
+    height: 3ch;
+}
+#togglebtn{
+    
+    height: 2.2ch;
+    width: 2.2ch;
+    border-radius: 50%;
+    background-color: #eee;
+    border-style: none;
 }
