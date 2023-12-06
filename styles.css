@@ -47,8 +47,8 @@ Desktop -> 1200px */
     box-sizing: border-box;
 }
 body{
-    /* background-color: #B1D4E0; */
-    background:linear-gradient(45deg, blueviolet, lightgreen);
+    background-color: #fff;
+    /* background:linear-gradient(45deg, blueviolet, lightgreen); */
     font-family: 'Roboto', sans-serif;
     
     
@@ -101,7 +101,7 @@ body{
     
     display: flex;
     justify-content: space-between;
-    background-image: url('images/gradientbg.png');
+    background-image: url('images/whitebg.png');
     min-height: 500px;
 
   /* Create the parallax scrolling effect */
@@ -198,23 +198,11 @@ body{
     transform: scale(1.03);
 }
 
-.sec1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
 }
-
-.sec2{
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-
-
-
 
