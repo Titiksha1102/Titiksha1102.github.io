@@ -1,4 +1,36 @@
-
+/* Mobile  -> 576px
+Tablet  -> 768px
+Laptop  -> 992px
+Desktop -> 1200px */
+@media screen and (max-width:1200px) { 
+      
+  }
+  @media screen and (max-width:992px) {
+     
+  }
+  @media screen and (max-width:768px) {
+    
+  }
+  @media screen and (max-width:576px) {
+    .aboutme{
+        display: block;
+        
+    }
+    .skills{
+        flex-direction: column;
+    }
+    .skillcard{
+        min-width: 70%;
+        padding: 1rem;
+    }
+    .projects{
+        flex-direction: column;
+    }
+    .projectcard{
+        min-width: 95%;
+        padding: 1rem;
+    }
+  }
 
 
 
@@ -103,7 +135,7 @@ body{
     padding-inline: 3%;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: center;
     font-weight: 900;
     gap: 1rem;
     
@@ -115,7 +147,9 @@ body{
     justify-content: center;
     padding-top: 50px;
     border-radius: 10px;
-    width: 500px;
+    /* width: 500px;
+    height: 400px; */
+    width: 20%;
     height: 400px;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     background: linear-gradient(45deg, #00a1ff, #00ff8f);
@@ -137,7 +171,7 @@ body{
     padding-inline: 15%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-weight: 900;
     gap: 1rem;
 
@@ -151,7 +185,7 @@ body{
     justify-content: center;
     padding-top: 50px;
     border-radius: 10px;
-    width: 300px;
+    width: 30%;
     height: 400px;
 
 }
