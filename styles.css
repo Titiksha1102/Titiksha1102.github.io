@@ -48,7 +48,7 @@ Desktop -> 1200px */
 }
 
 body{
-    background-color: #fff;
+    background-color: white;
     /* background:linear-gradient(45deg, blueviolet, lightgreen); */
     font-family: 'Roboto', sans-serif;
     
@@ -101,9 +101,11 @@ body{
 
 
 #aboutme{
-    
-    
-    background-image: url('images/whitebg.png');
+    padding-top: 4rem;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 5%;
+    /* background-image: white; */
     
     min-height: 500px;
 
@@ -112,31 +114,86 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    /* transform: rotateX(180deg);
+    transition-duration: 5s; */
     
 }
 .abtpara{
-    padding-block: 15%;
+    padding-block: 10%;
     
-    padding-left: 10%;
-    padding-right: 40%;
+    /* padding-left: 10%; */
+    /* padding-right: 40%; */
     
-    font-weight: 900;   
+    font-weight: 900; 
+    
+    /* transform: rotateX(180deg);
+    transition-duration: 1s;   */
 }
 
+.abtpara:hover{
+    /* transform: translate(2rem,3rem);
+    transition-duration: 1s; */
+
+    /* transform: rotateX(360deg);
+    transition-duration: 3s; */
+}
+
+.animate {
+    animation-name:anyname;
+    animation-duration: 2s;
+    /* animation-timing-function: ease-in-out; */
+    /* animation-delay: 1s; */
+    /* animation-iteration-count: 2; */
+    /* animation-direction: normal; */
+    animation-fill-mode: forwards;
+    /* animation: 5s ease-in-out 1s 2 normal forwards slide; */
+  }
+  
+  @keyframes anyname {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(3rem);
+    }
+  }
+
+.animate2{
+    animation-name:imganim;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes imganim {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-3rem);
+    }
+  }
+
+
 .education{
+    display: flex;
     padding-block: 10%;
-    padding-right: 10%;
-    padding-left: 45%;
-    
+    /* padding-right: 10%;
+    padding-left: 45%; */
+    padding-inline: 10%;
+
     font-weight: 900;
     min-height: 500px;
 
-    background-image: url('images/whiteedu.png');
+    /* background-image: url('images/whiteedu.png');
 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+}
+.education p{
+    padding-top: 10%;
 }
 
 .skills{
