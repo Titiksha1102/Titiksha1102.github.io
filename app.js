@@ -18,16 +18,16 @@
         if (document.body.style.backgroundColor==='white') {
             document.getElementById('btn').style.justifyContent="flex-end";
             document.body.style.backgroundColor="black";
-            document.getElementById('aboutme').style.backgroundImage="url('images/blackbg.png')";
-            document.getElementsByClassName('education')[0].style.backgroundImage="url('images/blackedu.png')";
+            document.getElementById('aboutme').style.backgroundColor='black';
+            document.getElementsByClassName('education')[0].style.backgroundColor='black';
             document.body.style.color='white';
             document.getElementById('contactme').style.borderRight="white solid 2px";
             
         } else {
             document.getElementById('btn').style.justifyContent="flex-start";
             document.body.style.backgroundColor="white";
-            document.getElementById('aboutme').style.backgroundImage="url('images/whitebg.png')"
-            document.getElementsByClassName('education')[0].style.backgroundImage="url('images/whiteedu.png')";
+            document.getElementById('aboutme').style.backgroundColor='white';
+            document.getElementsByClassName('education')[0].style.backgroundColor='white';
             document.body.style.color='black';
             document.getElementById('contactme').style.borderRight="black solid 2px";
         }
