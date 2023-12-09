@@ -34,3 +34,16 @@
     }
 
     
+    function mobnav(){
+        
+        if(document.getElementsByClassName('mob')[0].classList.contains('mobilenavlink')){
+            document.getElementsByClassName('mob')[0].classList.remove("mobilenavlink");
+            document.getElementsByClassName('mob')[0].classList.add("mobilenavlinkshow");
+        }
+        else{
+            document.getElementsByClassName('mob')[0].classList.remove("mobilenavlinkshow");
+            document.getElementsByClassName('mob')[0].classList.add("mobilenavlink");
+        }
+        
+
+    }

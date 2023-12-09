@@ -18,18 +18,31 @@
 
 <body>
     <div class="navbar">
-        
-            <div class="logo">
-                Logo
+            <div class="sect1">
+                <div class="logo">
+                    Logo
+                </div>
+                <div class="menu"><button onclick="mobnav()" style="background-color:#9400ff; border: none;"><i class="fa-solid fa-bars"></i></button></div>
+                
+                <div class="navlink">
+                    <a href="#aboutme">About me</a>
+                    <a href="#edn">Education</a>
+                    <a href="#skillsec">Skills</a>
+                    <a href="#projsec">Projects</a>
+                    <a href="#foot">Contact</a>
+                </div>
             </div>
-            <div class="navlink">
-                <a href="">About me</a>
-                <a href="">Education</a>
-                <a href="">Skills</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
+            <div class="sect2">
+                <div class="mob mobilenavlink">
+                    <a href="#aboutme">About me</a>
+                    <a href="#edn">Education</a>
+                    <a href="#skillsec">Skills</a>
+                    <a href="#projsec">Projects</a>
+                    <a href="#foot">Contact</a>
+                </div>
             </div>
-        
+
+            
     </div>
     
     <div class="maincontent">
@@ -41,21 +54,24 @@
                     I'm a fresher tech graduate showcasing excellent skills in software design and development. I specialise in web development and aspire to be a full stack developer.
                 </p>
             </div>
+            <div id="abtmeimg">
+                <img id="hidden2" class="" src="images/bg.png" alt="" height="300" width="300"> 
+            </div>
             
-            <img id="hidden2" class="animate2" src="images/bg.png" alt="" height="450" width="450">
         </div>
-        <div class="education">
-            
+        <div id="edn" class="education">
+            <div id="eduimg">
+                <img id="hidden3" class="" src="images/edu.png" alt="" height="300" width="300">
+            </div>
                 
-                <img id="hidden3" class="animate" src="images/edu.png" alt="" height="450" width="450">
-            <div id="hidden4" class='animate2' style="display: flex; flex-direction: column; padding-left: 20%; padding-top: 10%;">
+            <div id="hidden4" class='' style="display: flex; flex-direction: column; padding-left: 20%; padding-top: 10%;">
                 <h2  >Education</h2><br>
                 <p >I have a bachelor's degree in Information Technology(B.TECH IT) from Anna University, Chennai.</p>
             </div>
         </div>
 
         <h2 style="padding-left: 11%; padding-top: 50px;">Technical Skills</h2>
-        <div class="skills">
+        <div id="skillsec" class="skills">
             
             <div class="skillcard"><p>Programming languages</p></div>
             <div class="skillcard"><p>Databases</p> </div>
@@ -65,7 +81,7 @@
 
 
         <h2 style="padding-left: 11%;">Projects</h2>
-        <div class="projects">
+        <div class="projects" id="projsec">
             
             <div class="projectcard">Quillquest</div>
             <div class="projectcard">EcoCamps</div>
@@ -73,7 +89,7 @@
         </div>
            
     </div>
-    <div class="footer">
+    <div class="footer" id="foot">
         <div class="contact">
             <div id="contactme">
                 <center><h4>Connect with me...</h4></center><br>
@@ -107,13 +123,16 @@
             </div>    
         </div>
         <br>
-        <center>
-            <div id="btn">
-                <button id="togglebtn" onclick="changetheme();"></button>
-            </div>
-
-            <p style="font-size: 0.7rem; margin-top: 0.5rem;">Switch theme</p>
-        </center>
+        <div id="themebutton">
+            <center>
+                <div id="btn">
+                    <button id="togglebtn" onclick="changetheme();"></button>
+                </div>
+    
+                <p style="font-size: 0.7rem; margin-top: 0.5rem;">Switch theme</p>
+            </center>
+        </div>
+        
  
         
         <div class="footer2">

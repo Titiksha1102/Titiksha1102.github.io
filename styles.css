@@ -12,10 +12,44 @@ Desktop -> 1200px */
     
   } */
   @media screen and (max-width:576px) {
-    .aboutme{
-        display: block;
+    #aboutme{
+        display: flex;
+        flex-direction: column;
+        min-height: 70vh;
+        margin-bottom: 10vh;
+    }
+    #abtmeimg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(80%,80%);
+    }
+    .education{
+        display: flex;
+        flex-direction: column;
+        min-height: 70vh;
         
     }
+    #eduimg{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(80%,80%);
+        
+    }
+    .animate3{
+        animation-name: anyname5;
+    }
+    @keyframes anyname5 {
+        0% {
+            transform: translateX(0);
+        }
+        100%{
+            transform: scale(120%,120%);
+        }
+      }
+
     .skills{
         flex-direction: column;
     }
@@ -30,16 +64,51 @@ Desktop -> 1200px */
         min-width: 95%;
         padding: 1rem;
     }
+
+    
+    .navlink{
+        display: none;
+    }
+    .mobilenavlink{
+        display: none;
+    }
+    .mobilenavlinkshow{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        
+        /* gap: 0.5rem; */
+        
+        /* place-items: center; */
+    }
+    .mobilenavlinkshow a{
+        text-decoration: none;
+        color: black;
+        border-top: 2px solid black;
+        padding-block: 1%;
+        text-align: center;
+    }
+    .mobilenavlinkshow a:last-child{
+        border-bottom: 2px solid black;
+    }
+
+    
   }
 
 
+  @media screen and (min-width:577px){
+    .menu{
+        display: none; 
+    }
+    .mobilenavlink{
+        display: none;
+    }
+    mob{
+        display: none;
+    }
+}
 
-
-
-
-
-
-
+/* media query over */
 
 *{
     padding: 0;
@@ -48,6 +117,7 @@ Desktop -> 1200px */
 }
 
 body{
+    
     background-color: white;
     /* background:linear-gradient(45deg, blueviolet, lightgreen); */
     font-family: 'Roboto', sans-serif;
@@ -58,6 +128,7 @@ body{
     padding-block: 2rem;
     padding-inline: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     position: sticky;
     top: 0;
@@ -66,6 +137,12 @@ body{
     background-color: #9400ff;
 
 }
+.sect1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 .navlink a{
     margin-inline: 1rem;
@@ -94,37 +171,46 @@ body{
 .maincontent{
     
     font-size: 1rem;
-    
+    padding-inline: 5%;
     
     
 }
-
+#abtmeimg{
+height: auto;
+width: auto;
+}
+#eduimg{
+    height: auto;
+    width: auto;
+}
 
 #aboutme{
     padding-top: 4rem;
     display: flex;
-    padding-left: 10%;
-    padding-right: 5%;
+    /* padding-left: 10%;
+    padding-right: 5%; */
+    padding-inline: 10%;
     /* background-image: white; */
     
-    min-height: 500px;
+    height: 50vh;
 
   /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 
     /* transform: rotateX(180deg);
     transition-duration: 5s; */
     
 }
 .abtpara{
-    height: 100vh;
-    padding-block: 10%;
-    
+    /* height: 100vh; */
+    padding-top: 10%;
+    padding-bottom: 5%;
+    /* padding-inline: 5%; */
     /* padding-left: 10%; */
-    /* padding-right: 40%; */
+    padding-right: 20%;
     
     font-weight: 900; 
     
@@ -132,16 +218,16 @@ body{
     transition-duration: 1s;   */
 }
 
-.abtpara:hover{
-    /* transform: translate(2rem,3rem);
-    transition-duration: 1s; */
+/* .abtpara:hover{
+    transform: translate(2rem,3rem);
+    transition-duration: 1s;
 
-    /* transform: rotateX(360deg);
-    transition-duration: 3s; */
-}
+    transform: rotateX(360deg);
+    transition-duration: 3s;
+} */
 
-.animate {
-    animation-name:anyname;
+.animate1 {
+    animation-name:anyname1;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     /* animation-delay: 1s; */
@@ -151,42 +237,73 @@ body{
     /* animation: 5s ease-in-out 1s 2 normal forwards slide; */
   }
   
-  @keyframes anyname {
+  @keyframes anyname1 {
     0% {
         transform: translateX(0);
     }
     100%{
-        transform: translateX(3rem);
+        transform: translateX(10%);
     }
   }
 
 .animate2{
-    animation-name:imganim;
+    animation-name:anyname2;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes imganim {
+@keyframes anyname2 {
     0% {
         transform: translateX(0);
     }
     100%{
-        transform: translateX(-3rem);
+        transform: scale(120%,120%);
+    }
+  }
+  .animate3{
+    animation-name:anyname3;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anyname3 {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: scale(130%,120%);
+    }
+  }
+  .animate4{
+    animation-name:anyname4;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anyname4 {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-10%);
     }
   }
 
+ 
 
 .education{
     display: flex;
-    padding-block: 10%;
+    padding-top: 10%;
     /* padding-right: 10%;
     padding-left: 45%; */
     padding-inline: 10%;
 
     font-weight: 900;
-    height: 100vh;
-
+    height: 50vh;
+    
     /* background-image: url('images/whiteedu.png');
 
     background-attachment: fixed;
@@ -279,7 +396,7 @@ body{
 
 .contact{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
 
 }
 
@@ -394,3 +511,8 @@ input{
     background-color: #eee;
     border-style: none;
 }
+
+
+
+
+
