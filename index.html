@@ -14,13 +14,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
+    <script src="onfreshload.js"></script>
     <div class="navbar">
             <div class="sect1">
                 <div class="logo">
-                    Logo
+                    <img src="images/logo.png" alt="" height="30" width="100">
                 </div>
                 <div class="menu"><button onclick="mobnav()" style="background-color:#9400ff; border: none;"><i class="fa-solid fa-bars"></i></button></div>
                 
@@ -51,7 +53,7 @@
             <div class="abtpara" id="hidden1">
                 <h2>About me...</h2><br>
                 <p>
-                    I'm a fresher tech graduate showcasing excellent skills in software design and development. I specialise in web development and aspire to be a full stack developer.
+                    I'm a fresher tech graduate showcasing excellent skills in software design and development. I display keen interest in web development and aspire to be a full stack developer.I'm also skillful in solving problems using data structures and algorithms.
                 </p>
             </div>
             <div id="abtmeimg">
@@ -70,22 +72,70 @@
             </div>
         </div>
 
-        <h2 style="padding-left: 11%; padding-top: 50px;">Technical Skills</h2>
-        <div id="skillsec" class="skills">
+        <h2 id="skillsec" style="padding-left: 11%; padding-top: 50px;">Skills</h2>
+        <div  class="skills">
             
-            <div class="skillcard"><p>Programming languages</p></div>
-            <div class="skillcard"><p>Databases</p> </div>
-            <div class="skillcard"><p>Frameworks</p></div>
-            <div class="skillcard"><p>Tools</p></div>
+            <div class="skillcard">
+                <div>Programming languages </div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    Java,C,Python,
+                    HTML5,CSS,
+                    JavaScript ES6,PHP
+                </div>
+                
+  
+            </div>
+            <div class="skillcard">
+                <div> Databases </div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    MySQL,MongoDB
+                </div>
+            </div>
+            <div class="skillcard">
+                <div>Frameworks </div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    Express.js, Spring MVC
+                </div>
+            </div>
+            <div class="skillcard">
+                <div>Tools </div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    Git & GitHub,
+                    Node Js Runtime 
+                    Environment
+                </div>
+            </div>
         </div>
 
 
-        <h2 style="padding-left: 11%;">Projects</h2>
-        <div class="projects" id="projsec">
+        <h2 style="padding-left: 11%;" id="projsec">Projects</h2>
+        <div class="projects" >
             
-            <div class="projectcard">Quillquest</div>
-            <div class="projectcard">EcoCamps</div>
-            <div class="projectcard">Spring project</div>
+            <div class="projectcard">
+                <div>Quillquest</div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    Full Stack web application for an e-bookstore
+                </div>
+                <div>
+                    <button><a href="https://github.com/titikshaiyer/Ecommerce-website">View more</a></button>
+                </div>
+                
+            </div>
+            <div class="projectcard">
+                <div>EcoCamps</div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    A web app for camp-stay booking 
+                </div>
+                <div>
+                    <button><a href="https://github.com/titikshaiyer/EcoExplore">View more</a></button>
+                </div>
+            </div>
+            <div class="projectcard">
+                <div>Project 3 </div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    Under progress
+                </div>
+            </div>
         </div>
            
     </div>
@@ -109,9 +159,12 @@
                     <div>|</div>
                     <div class="connect"><i class="fa-solid fa-phone"></i> 9025256274</div>
                 </div>
+                <div class="sec3">
+                    <button><i class="fa-solid fa-download"></i>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <a download href="downloadable/Titiksha_M_Resume.pdf">Download CV</a></button>
+                </div>
             </div>
             <div class="contactu">
-                <form action="" class="contactyouform">
+                <form action="storedata.php" class="contactyouform">
                     <h4>Leave your contact...</h4>
                     <input type="text" name="" id="" placeholder="Name">
                     <input type="email" name="" id="" placeholder="Email">
@@ -146,6 +199,7 @@
         
        
     </div>
+    
 </body>
 
 <script src="app.js"></script>

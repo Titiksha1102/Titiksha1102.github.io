@@ -11,102 +11,7 @@ Desktop -> 1200px */
   @media screen and (max-width:768px) {
     
   } */
-  @media screen and (max-width:576px) {
-    #aboutme{
-        display: flex;
-        flex-direction: column;
-        min-height: 70vh;
-        margin-bottom: 10vh;
-    }
-    #abtmeimg{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: scale(80%,80%);
-    }
-    .education{
-        display: flex;
-        flex-direction: column;
-        min-height: 70vh;
-        
-    }
-    #eduimg{
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: scale(80%,80%);
-        
-    }
-    .animate3{
-        animation-name: anyname5;
-    }
-    @keyframes anyname5 {
-        0% {
-            transform: translateX(0);
-        }
-        100%{
-            transform: scale(120%,120%);
-        }
-      }
-
-    .skills{
-        flex-direction: column;
-    }
-    .skillcard{
-        min-width: 70%;
-        padding: 1rem;
-    }
-    .projects{
-        flex-direction: column;
-    }
-    .projectcard{
-        min-width: 95%;
-        padding: 1rem;
-    }
-
-    
-    .navlink{
-        display: none;
-    }
-    .mobilenavlink{
-        display: none;
-    }
-    .mobilenavlinkshow{
-        margin-top: 10%;
-        display: flex;
-        flex-direction: column;
-        
-        /* gap: 0.5rem; */
-        
-        /* place-items: center; */
-    }
-    .mobilenavlinkshow a{
-        text-decoration: none;
-        color: black;
-        border-top: 2px solid black;
-        padding-block: 1%;
-        text-align: center;
-    }
-    .mobilenavlinkshow a:last-child{
-        border-bottom: 2px solid black;
-    }
-
-    
-  }
-
-
-  @media screen and (min-width:577px){
-    .menu{
-        display: none; 
-    }
-    .mobilenavlink{
-        display: none;
-    }
-    mob{
-        display: none;
-    }
-}
+ 
 
 /* media query over */
 
@@ -124,9 +29,15 @@ body{
     
     
 }
+
+
+.logo img{
+    transform: scale(250%,250%);
+}
 .navbar{
     padding-block: 2rem;
-    padding-inline: 2rem;
+    padding-left: 5rem;
+    padding-right: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -193,7 +104,7 @@ width: auto;
     /* background-image: white; */
     
     height: 50vh;
-
+    
   /* Create the parallax scrolling effect */
     /* background-attachment: fixed;
     background-position: center;
@@ -295,6 +206,7 @@ width: auto;
  
 
 .education{
+    margin-top: 10%;
     display: flex;
     padding-top: 10%;
     /* padding-right: 10%;
@@ -303,6 +215,7 @@ width: auto;
 
     font-weight: 900;
     height: 50vh;
+    margin-bottom: 15%;
     
     /* background-image: url('images/whiteedu.png');
 
@@ -330,8 +243,10 @@ width: auto;
 .skillcard{
     
     display: flex;
-    align-items:flex-start;
-    justify-content: center;
+    flex-direction: column;
+    
+    text-align: center;
+    gap: 8rem;
     padding-top: 50px;
     border-radius: 10px;
     /* width: 500px;
@@ -346,6 +261,8 @@ width: auto;
     
     
 }
+
+
 .skillcard:hover{
     
     /* transform: translate(-5px,-5px); */
@@ -368,14 +285,14 @@ width: auto;
 
 }
 .projectcard{
-
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    gap: 6rem;
     /* background:linear-gradient(45deg, #00a1ff, #00ff8f); */
     background:linear-gradient(45deg, #7f00ff, #e100ff);
 
-
-    display: flex;
-    align-items:flex-start;
-    justify-content: center;
     padding-top: 50px;
     border-radius: 10px;
     width: 30%;
@@ -383,6 +300,19 @@ width: auto;
     color: black;
 
 }
+.projectcard button{
+    background-color: black;
+    padding: 0.5rem;
+    border: none;
+    
+    border-radius: 5px;
+    
+}
+    .projectcard a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
 
 .projectcard:hover{
     
@@ -412,7 +342,27 @@ width: auto;
     gap: 1rem;
 
 }
-
+.sec3{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sec3 button{
+    
+        background-color: #7f00ff;
+        padding: 1rem;
+        font-size: 1.5rem;
+        border: none;
+        color: white;
+        border-radius: 5px;  
+        font-weight: bold; 
+}
+.sec3 button a{
+    text-decoration: none;
+    color: white;
+}
 
 
 #linkedin:hover::after{
@@ -462,7 +412,7 @@ width: auto;
 input{
     
     width: 50ch;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #eee;
     border: #eee solid 1px;
     padding: 0.5rem;
@@ -513,6 +463,109 @@ input{
 }
 
 
+@media screen and (max-width:576px) {
+    .contact{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 5rem;
+    }
+    #contactme{
+        border-right: none;
+    }
+    #aboutme{
+        display: flex;
+        flex-direction: column;
+        min-height: 70vh;
+        margin-bottom: 10vh;
+    }
+    #abtmeimg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(80%,80%);
+    }
+    .education{
+        display: flex;
+        flex-direction: column;
+        min-height: 70vh;
+        
+    }
+    #eduimg{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(80%,80%);
+        
+    }
+    .animate3{
+        animation-name: anyname5;
+    }
+    @keyframes anyname5 {
+        0% {
+            transform: translateX(0);
+        }
+        100%{
+            transform: scale(120%,120%);
+        }
+      }
 
+    .skills{
+        flex-direction: column;
+    }
+    .skillcard{
+        min-width: 70%;
+        padding: 1rem;
+    }
+    .projects{
+        flex-direction: column;
+    }
+    .projectcard{
+        min-width: 95%;
+        padding: 1rem;
+    }
+
+    
+    .navlink{
+        display: none;
+    }
+    .mobilenavlink{
+        display: none;
+    }
+    .mobilenavlinkshow{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        
+        /* gap: 0.5rem; */
+        
+        /* place-items: center; */
+    }
+    .mobilenavlinkshow a{
+        text-decoration: none;
+        color: black;
+        border-top: 2px solid black;
+        padding-block: 1%;
+        text-align: center;
+    }
+    .mobilenavlinkshow a:last-child{
+        border-bottom: 2px solid black;
+    }
+
+    
+  }
+
+
+  @media screen and (min-width:577px){
+    .menu{
+        display: none; 
+    }
+    .mobilenavlink{
+        display: none;
+    }
+    mob{
+        display: none;
+    }
+}
 
 
