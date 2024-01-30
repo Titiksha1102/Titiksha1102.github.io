@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titik's portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap link -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <script src="onfreshload.js"></script>
+    <div class="navbar">
+            <div class="sect1">
+                <div class="logo">
+                    <img src="images/logo.png" alt="" height="30" width="100">
+                </div>
+                <div class="menu"><button onclick="mobnav()" style="background-color:#9400ff; border: none;"><i class="fa-solid fa-bars"></i></button></div>
+                
+                <div class="navlink">
+                    <a href="#aboutme">About me</a>
+                    <a href="#edn">Education</a>
+                    <a href="#skillsec">Skills</a>
+                    <a href="#projsec">Projects</a>
+                    <a href="#foot">Contact</a>
+                </div>
+            </div>
+            <div class="sect2">
+                <div class="mob mobilenavlink">
+                    <a href="#aboutme">About me</a>
+                    <a href="#edn">Education</a>
+                    <a href="#skillsec">Skills</a>
+                    <a href="#projsec">Projects</a>
+                    <a href="#foot">Contact</a>
+                </div>
+            </div>
+
+            
+    </div>
+    
+    <div class="maincontent">
+        
+        <div id="aboutme">
+            <div class="abtpara" id="hidden1">
+                <h2>About me...</h2><br>
+                <p>
+                    I'm a fresher tech graduate showcasing excellent skills in software design and development. I display keen interest in web development and aspire to be a full stack developer.I'm also skillful in solving problems using data structures and algorithms.
+                </p>
+            </div>
+            <div id="abtmeimg">
+                <img id="hidden2" class="" src="images/bg.png" alt="" height="300" width="300"> 
+            </div>
+            
+        </div>
+        <div id="edn" class="education">
+            <div id="eduimg">
+                <img id="hidden3" class="" src="images/edu.png" alt="" height="300" width="300">
+            </div>
+                
+            <div id="hidden4" class='' style="display: flex; flex-direction: column; padding-left: 20%; padding-top: 10%;">
+                <h2  >Education</h2><br>
+                <p >I have a bachelor's degree in Information Technology(B.TECH IT) from Anna University, Chennai.</p>
+            </div>
+        </div>
+
+        <h2 id="skillsec" style="padding-left: 11%; padding-top: 50px;">Skills</h2>
+        <div  class="skills">
+            
+            <div class="skillcard">
+                <div>Programming languages </div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    Java,C,Python,
+                    HTML5,CSS,
+                    JavaScript ES6,PHP
+                </div>
+                
+  
+            </div>
+            <div class="skillcard">
+                <div> Databases </div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    MySQL,MongoDB
+                </div>
+            </div>
+            <div class="skillcard">
+                <div>Frameworks </div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    Express.js, Spring MVC
+                </div>
+            </div>
+            <div class="skillcard">
+                <div>Tools </div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    Git & GitHub,
+                    Node Js Runtime 
+                    Environment
+                </div>
+            </div>
+        </div>
+
+
+        <h2 style="padding-left: 11%;" id="projsec">Projects</h2>
+        <div class="projects" >
+            
+            <div class="projectcard">
+                <div>Quillquest</div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    Full Stack web application for an e-bookstore
+                </div>
+                <div>
+                    <button><a href="https://github.com/titikshaiyer/Ecommerce-website">View more</a></button>
+                </div>
+                
+            </div>
+            <div class="projectcard">
+                <div>EcoCamps</div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    A web app for camp-stay booking 
+                </div>
+                <div>
+                    <button><a href="https://github.com/titikshaiyer/EcoExplore">View more</a></button>
+                </div>
+            </div>
+            <div class="projectcard">
+                <div>Quizzify </div>
+                <div style="font-weight: 100; padding-inline: 10%;">
+                    A quiz app built using winforms
+                </div>
+                <div>
+                    <button><a href="https://github.com/titikshaiyer/EcoExplore">View more</a></button>
+                </div>
+            </div>
+        </div>
+           
+    </div>
+    <div class="footer" id="foot">
+        <div class="contact">
+            <div id="contactme">
+                <center><h4>Connect with me...</h4></center><br>
+                
+                <div class="sec1">
+                    
+                    <div  id="linkedin"><i class="fa-brands fa-linkedin"></i></div>
+                    <div >|</div>
+                    <div  id="github"><i class="fa-brands fa-square-github"></i></div>
+                    <div >|</div>
+                    <div  id="leetcode"><i class="fa-solid fa-code"></i></div>
+                    <div >|</div>
+                    <div  id="hackerrank"><i class="fa-solid fa-code"></i></div>
+                </div>
+                <div class="sec2">
+                    <div class="connect"><i class="fa-solid fa-envelope"></i> titiksha1102@gmail.com</div>
+                    <div>|</div>
+                    <div class="connect"><i class="fa-solid fa-phone"></i> 9025256274</div>
+                </div>
+                <div class="sec3">
+                    <button><i class="fa-solid fa-download"></i>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <a download href="downloadable/Titiksha_M_Resume.pdf">Download CV</a></button>
+                </div>
+            </div>
+            <div class="contactu">
+                <form action="storedata.php" class="contactyouform">
+                    <h4>Leave your contact...</h4>
+                    <input type="text" name="name" id="" placeholder="Name">
+                    <input type="email" name="email" id="" placeholder="Email">
+                    <input type="text" name="mobile" id="" placeholder="Mobile">
+                    <input type="text" name="comments" id="comments" placeholder="Comments(optional)...">
+                    <input type="submit" value="Submit" id="submit">
+
+                </form>
+            </div>    
+        </div>
+        <br>
+        <div id="themebutton">
+            <center>
+                <div id="btn">
+                    <button id="togglebtn" onclick="changetheme();"></button>
+                </div>
+    
+                <p style="font-size: 0.7rem; margin-top: 0.5rem;">Switch theme</p>
+            </center>
+        </div>
+        
+ 
+        
+        <div class="footer2">
+            
+            <center>
+                
+                <p>All rights reserved © Designed by titiksha 2023</p>
+            </center>
+            
+        </div>
+        
+       
+    </div>
+    
+</body>
+
+<script src="app.js"></script>
+<script src="animate.js"></script>
+</html>
