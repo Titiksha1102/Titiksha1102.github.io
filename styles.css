@@ -30,7 +30,19 @@ body{
     
 }
 
-
+.blink {
+    text-align: center;
+    font-size: 2rem;
+    font-weight:900;
+    animation: blinker 1.5s linear infinite;
+    color: red;
+    font-family: sans-serif;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
 .logo img{
     transform: scale(250%,250%);
 }
@@ -86,6 +98,7 @@ body{
     
     
 }
+
 #abtmeimg{
 height: auto;
 width: auto;
